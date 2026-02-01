@@ -1,5 +1,4 @@
 from __future__ import annotations
-
 import pandas as pd
 import seaborn as sns
 from matplotlib import pyplot as plt
@@ -23,6 +22,8 @@ print("Correlation:", corr_value)
 
 # 4) Line plot over time
 sns.set_theme()
+fig: Figure
+ax1: Axes
 fig, ax1 = plt.subplots(figsize=(10, 4))
 sns.lineplot(data=df, x="date", y="temp_c", ax=ax1, label="Temp (C)", color="tomato")
 ax2: Axes = ax1.twinx()
@@ -36,9 +37,9 @@ fig.tight_layout()
 plt.show()
 
 # 5) Scatter with hue by weekend (and trendline)
+scatter_fig: Figure
+scatter_ax: Axes
 scatter_fig, scatter_ax = plt.subplots(figsize=(6, 5))
-scatter_fig = cast(Figure, scatter_fig)
-scatter_ax = cast(Axes, scatter_ax)
 sns.scatterplot(
     data=df,
     x="temp_c",
