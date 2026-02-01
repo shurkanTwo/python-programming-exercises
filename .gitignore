@@ -26,9 +26,5 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Logs / data
-*.log
-*.csv
-
 # Secrets
 credentials.json
