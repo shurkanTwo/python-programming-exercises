@@ -69,8 +69,3 @@ print(scheduler.add_event(event_two))
 print(scheduler.add_event(event_three))
 
 print(scheduler.next_events())
-# Print upcoming events
-
-# Test overlap rejection
-
-# Test events on a date

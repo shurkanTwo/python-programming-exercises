@@ -1,16 +1,5 @@
 from typing import List
 
-# def sum_numbers(values: List[int]) -> int:
-#     return sum(values)
-
-# print(sum_numbers([1, 2, 3]))
-
-# def count_vowels(text: str) -> int:
-#     vowels = "aeiouAEIOU"
-#     return sum(1 for c in text if c in vowels)
-
-# print(count_vowels("Hello World"))
-
 
 def encrypt(text: str, shift: int) -> str:
     charsLower = "abcdefghijklmnopqrstuvwxyz"
@@ -105,8 +94,3 @@ def count_words2(text: str) -> dict[str, int]:
 
 
 print(count_words("Das hier ist ist ist, ein Text, mal sehen !"))
-
-# Use str.lower()
-# Use str.isalpha() or regex (re.sub) to remove punctuation
-# Use a dictionary to store counts
-# Optional: type hint with dict[str, int]

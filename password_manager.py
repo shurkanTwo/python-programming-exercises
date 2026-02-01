@@ -101,19 +101,3 @@ class PasswordManager:
 password_manager: PasswordManager = PasswordManager("credentials.json")
 
 print(password_manager)
-
-# 3. Provide a small CLI demo
-# At the bottom of the file:
-# Add 3 credential
-# Save them
-# Load them
-# Print all services
-# Look up one
-# Delete one
-# Print the rest
-# ⭐ Bonus (optional)
-# Mask the password when printing
-# e.g. "password": "*****"
-# Add a method to list all services alphabetically
-# Add ability to update an existing credential
-# Allow exporting to a .csv file
